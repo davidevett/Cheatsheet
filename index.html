@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Cheatsheet</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <h1>CSS Snipet Cheatsheet</h1>
+        <p>Ever have trouble recalling the exact syntax for you favorite CSS code? Give it a permenant home and add it to this page.</p>
+    </header>
+
+    <main class="content">
+
+        <section class="cards">
+            <h2>Flex Box Row</h2>
+            <p>Use these properites to create a flexbox row</p>
+            <code>.row {
+                dispaly: flex; 
+                flex direction: row ;
+                flex-wrap: wrap; }
+            </code>
+        </section>
+
+        <section class="cards">
+            <h2>Flexbox Column</h2>
+            <p>Use this to create a flexbox column layout</p>
+            <code>.column { display: flex; flex-direction:column; }</code>
+        </section>
+
+        <section class="cards">
+            <h2>CSS Grid Layout</h2>
+            <p>Build a 12-column layout using CSS grid</p>
+            <code>.grid { display: grid width: 100% grid-template-columns: repeat(12, 1fr); }</code>
+        </section>
+
+        <section class="cards">
+            <h2>Linear Gradients</h2>
+            <p>This will create a background linear gradient from top to bottom</p>
+            <code>.linear-gradient-background { background-image: linear-gradient(red,red,white); }</code>
+        </section>
+
+        <section class="cards">
+            <h2>Box Transition Glow</h2>
+            <P>Use transition and box shadow to glow on hover</P>
+            <code>.code-card .code-header { border-radius: 8px; transition: all .05s ease-in-out;} 
+                .code-card:hover .code-header:hover {box-shadow: inset 0px 0px 8px red, 0px 0px 15px black}
+            </code>
+        </section>
+
+        <section class="cards">
+            <h2>Overlay Card With Title</h2>
+            <P>... i mean this one is self explanitory</P>
+            <code>.code-header { position: releative; margin-top: -21px; } /code>
+        </section>
+
+
+    </main>
+
+</body>
+
+</html>
+
+

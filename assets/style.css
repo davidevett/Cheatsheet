@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(34, 32, 34);
+}
+
+.header {
+    text-align: center;
+    height: 25%;
+}
+
+h1 {
+    color: red;
+    text-shadow: 1px 1px 2px white;
+}
+
+h2, h3, h4, h5, h6 {
+    color: rgb(255, 0, 0);
+    text-shadow: 1px 2px 2px rgb(0, 0, 0);
+}
+
+p {
+    color: red;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 75%;
+    align-items: center;
+
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 4px dashed rgb(201, 0, 0);
+    margin: 1rem;
+    width: 30%;  
+    height: 300px;
+}
+
+
+.cards, h2 { 
+    border-radius: 8px; 
+    transition: all .05s ease-in-out;
+} 
+
+.cards:hover, h2:hover {
+    box-shadow: inset 0px 5px 8px rgb(255, 255, 255), 0px 0px 15px rgb(255, 255, 255)
+}
+
+.cards > h2 {
+    position: relative;
+    top: -45px;
+    border: 5px solid rgb(201, 0, 0);
+    padding: 5px;
+    border-radius: 50px;  
+    background-color: rgb(255, 255, 255);
+    width: 70%;
+    height: 1;
+}
+
+.cards > p {
+    position: relative;
+    bottom: 4.5rem;
+    width: 80%;
+}
+
+.cards > code {
+    position: relative;
+    bottom: 3rem;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    background-image: linear-gradient(180deg, rgb(245, 0, 0), rgb(180, 0, 0), rgb(193, 193, 193));
+    width: 80%;
+    height: 50%;
+    padding: 20px;
+    
+}
